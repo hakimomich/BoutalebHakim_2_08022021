@@ -1,0 +1,392 @@
+@font-face
+{
+    font-family: 'Raleway1';
+
+    src: url('font/Raleway-Medium.ttf');
+
+}
+@font-face
+{
+    font-family: 'Raleway2';
+
+    src: url('font/Raleway-SemiBold.ttf');
+
+}
+@font-face
+{
+    font-family: 'Raleway3';
+
+    src: url('font/Raleway-Light.ttf');
+
+}
+body
+{
+    font-family: Raleway1;
+    color:#181818 ;
+    padding: 0;
+    margin: 0;
+}
+header , #bloc-page, footer
+{
+    padding: 0 82px;
+}
+#logo img
+{
+    width: 90px;
+    height: 40px;
+}
+#logo
+{
+    margin-top: 2%;
+}
+nav
+{ 
+    margin-top: 2%;
+    width: 25%;
+}
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+nav a
+{
+  font-family: Raleway2, serif;
+  font-size:0.9em;
+  font-weight: normal;
+  text-decoration: none;
+  color: #0065FC;
+
+}
+.monheader
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.titre h3
+{
+    margin-top: -1%;
+    font-family: Raleway3, serif;
+    font-size: 0.9em;
+}
+.banière_recherche
+{
+    display: flex;
+    flex-direction: column;
+}
+.recherche
+{
+   display:flex;
+   flex-direction:row;
+   justify-content: flex-start;
+   align-items: center;
+   margin-top: 1%;
+   width: 35%;
+}
+
+#logo_map
+{
+    padding: 15px;
+    border: 1px solid  #F2F2F2 ;
+    background-color:  #F2F2F2;
+    border-radius: 30% 0% 0% 30%;
+}
+#champ_text input
+{
+   width: 200px;
+   height: 48px;
+   border: 1px solid  #F2F2F2 ;
+}
+input
+{
+  font-family: Raleway2;
+  font-size: 15px;
+  padding-left: 10px;
+}
+#button-s
+{
+  width: 100px;
+  height: 52px;
+  margin-left: -2px;
+  background-color:#0065FC;
+  border-radius: 0% 25% 25% 0%;
+  text-align: center;
+}
+.button_search1
+{
+   text-decoration: none;
+   color: white;
+   font-family: Raleway2, serif;
+   display: inline-block;
+   line-height: 50px;
+   font-size: 0.9em;
+}
+.filtre
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; 
+    width: 61%;
+    margin-top:1%;
+}
+.bund
+{    
+    border-top: 2px solid #F2F2F2;
+    border-bottom: 2px solid #F2F2F2;
+    border-right: 2px solid #F2F2F2;
+    border-radius: 30px;
+}
+.filtre a
+{   
+   display: inline-block;
+   padding: 10px;
+   text-decoration: none;
+   font-family: raleway2, serif;
+   color: black;
+   text-align: center;
+}
+.filtre i
+{
+   padding:10px;
+   color:#0065FC;
+   background-color:#DEEBFF;
+   border: 4px solid #DEEBFF;
+   border-radius:50%;
+}
+.filtre p
+{
+    font-family: raleway2, serif;
+    font-size:1.1em;
+    margin-left: 5px;
+
+}
+.infos-dispo
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    margin-top:1%;
+}
+.infos-dispo i
+{
+    color: #0065FC;
+    margin-right:10px;
+}
+.infos-dispo p
+{
+    font-size: 15px;
+}
+.heberg
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top:15px;
+}
+#conteneureth3
+{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    margin-top:1%;
+}
+.conteneur
+{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+}
+.element1
+{   
+    width: 25%;
+    background-color: white;
+    border-radius: 20px;
+    word-wrap: break-word;
+}
+.element1 img
+{
+    width: 96%;
+    margin-left: 2%;
+    margin-top: 2%;
+    margin-right:2%;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: contain;
+}
+
+.text1 , .text2 , .text3
+{
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-bottom:3%;  
+}
+.text1
+{
+   font-weight: bold;
+   font-size: 16px;
+}
+.text2
+{
+   font-size: 12px;
+}
+.text3
+{
+   font-size: 11px;
+}
+#conteneureth3 .firsth3
+{
+   margin-left: 40px;
+}
+#conteneureth3 .scdh3
+{
+   margin-left: 40px;
+}
+.populaireeth3
+{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    background-color: #F2F2F2; 
+    border-radius: 20px;
+    margin-top: 1%;
+}
+#populaire
+{
+   display: flex;
+   flex-direction: column;
+}
+.element2
+{
+   display: flex;
+   flex-direction: row;
+   background-color: white;
+   border-radius: 20px;
+   word-wrap: break-word;
+   
+}
+.element2 img
+{
+    width: 55%;
+    height: 96%;
+    margin-left: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border-radius: 20px 0px 0px 20px;
+    object-fit: contain;
+}
+.populaireeth3 h3
+{
+    margin-left: 40px;
+    word-wrap: break-word;
+}
+.element2 figcaption
+{
+    width: 45%;
+    margin-top: 3%;
+    margin-right: 15%;
+    margin-left: -30%;
+}
+.texte1 , .texte2 , .texte3
+{
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-bottom:5%;  
+}
+.texte1
+{
+    font-weight: bold;
+    font-size: 18px;
+}
+.texte2
+{
+    font-size: 14px;
+}
+.texte3
+{  
+    font-size: 11;
+    margin-top: 25%;
+}
+.acitivitéeth3
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+.acitivitéeth3 h3
+{
+    margin-left: 10px;
+}
+.activité
+{
+    display: flex;
+    flex-direction: row;  
+}
+.bloc1 , .bloc3
+{
+    width: 25%;
+    flex-grow: 2;
+}
+.bloc2 , .bloc4
+{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    flex-grow: 1;
+}
+.activité figure
+{
+    border-radius:20px 20px 20px 20px;
+    box-shadow: 1px 1px 5px rgb(210, 210, 210);
+}
+.activité img
+{
+    width: 100%;
+    border-radius:20px 20px 0px 0px; 
+    object-fit: contain;
+}
+.activité figcaption
+{
+    width: 100%;
+    font-family: Raleway2, serif;
+    padding: 5%;
+    word-wrap: break-word;
+}
+.monfooter
+{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    margin-top: 5%;
+    background-color: #F2F2F2;
+}
+.foot
+{
+    display: inline-block;
+    width: 30%;
+    font-family: Raleway1, serif;
+    word-wrap: wrap;
+}
+.monfooter a 
+{
+    list-style-type: none;
+    text-decoration: none;
+    color:black;
+}
+.monfooter ul
+{
+    margin-left:-40px;
+
+}
+.monfooter li
+{
+    padding-bottom: 10px;
+}
