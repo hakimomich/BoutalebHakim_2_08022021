@@ -26,7 +26,7 @@ body
     padding: 0;
     margin: 0;
 }
-header , #bloc-page, footer
+header , #bloc-page
 {
     padding: 0 82px;
 }
@@ -37,20 +37,20 @@ header , #bloc-page, footer
 }
 #logo
 {
-    margin-top: 2%;
+    margin-top: 30px;
 }
 nav
 { 
-    margin-top: 2%;
-    width: 25%;
+    margin-top: 30px;
+    width: 100%;
 }
 nav ul
 {
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    justify-content: flex-end;
+    flex-wrap: wrap;   
 }
 nav a
 {
@@ -58,8 +58,17 @@ nav a
   font-size:0.9em;
   font-weight: normal;
   text-decoration: none;
-  color: #0065FC;
-
+  color:black;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+nav li :hover
+{
+    color: #0065FC;
+    border-top: 1px solid #0065FC;
+    padding-top: 42px;
 }
 .monheader
 {
@@ -86,12 +95,14 @@ nav a
    justify-content: flex-start;
    align-items: center;
    margin-top: 1%;
-   width: 35%;
+   width: 100%;
 }
 
 #logo_map
 {
-    padding: 15px;
+    padding: 16px;
+    padding-left: 18px;
+    padding-right: 18px;
     border: 1px solid  #F2F2F2 ;
     background-color:  #F2F2F2;
     border-radius: 30% 0% 0% 30%;
@@ -110,11 +121,11 @@ input
 }
 #button-s
 {
-  width: 100px;
+  width: 120px;
   height: 52px;
   margin-left: -2px;
   background-color:#0065FC;
-  border-radius: 0% 25% 25% 0%;
+  border-radius: 0 15px 15px 0;
   text-align: center;
 }
 .button_search1
@@ -123,30 +134,40 @@ input
    color: white;
    font-family: Raleway2, serif;
    display: inline-block;
-   line-height: 50px;
-   font-size: 0.9em;
+   line-height: 52px;
+   font-size: 1em;
+   padding-right: 15px;
+   padding-left: 15px;
+}
+.button_search2
+{
+    display: none;
 }
 .filtre
 {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap; 
-    width: 61%;
+    width: 100%;
     margin-top:1%;
 }
 .bund
 {    
+    display: inline-block;
     border-top: 2px solid #F2F2F2;
     border-bottom: 2px solid #F2F2F2;
     border-right: 2px solid #F2F2F2;
     border-radius: 30px;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 .filtre a
 {   
    display: inline-block;
-   padding: 10px;
+   padding: 8px;
+   padding-right: 12px;
    text-decoration: none;
    font-family: raleway2, serif;
    color: black;
@@ -154,11 +175,11 @@ input
 }
 .filtre i
 {
-   padding:10px;
-   color:#0065FC;
-   background-color:#DEEBFF;
-   border: 4px solid #DEEBFF;
-   border-radius:50%;
+    padding: 8px;
+    color:#0065FC;
+    background-color:#DEEBFF;
+    border: 4px solid #DEEBFF;
+    border-radius: 50%;
 }
 .filtre p
 {
@@ -173,7 +194,6 @@ input
     flex-direction: row;
     justify-content: start;
     align-items: center;
-    margin-top:1%;
 }
 .infos-dispo i
 {
@@ -189,7 +209,6 @@ input
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top:15px;
 }
 #conteneureth3
 {
@@ -199,30 +218,45 @@ input
     background-color: #F2F2F2;
     border-radius: 20px;
     margin-top:1%;
+
 }
 .conteneur
 {
    display: flex;
    flex-direction: row;
+   justify-content: space-between;
+   padding: 25px;
    flex-wrap: wrap;
 }
 .element1
 {   
-    width: 25%;
+    width: 30%;
+    margin-bottom: 25px;
     background-color: white;
     border-radius: 20px;
+    box-shadow: 2px 2px 5px rgb(210, 210, 210);
     word-wrap: break-word;
 }
 .element1 img
 {
     width: 96%;
+    height: 150px;
     margin-left: 2%;
     margin-top: 2%;
     margin-right:2%;
     border-radius: 20px 20px 0px 0px;
-    object-fit: contain;
+    object-fit: cover;
 }
-
+.starb
+{
+   color:#0065FC ;
+   font-size: 15px;
+   font-weight: inherit;
+}
+.starg
+{
+   color: #F2F2F2;
+}
 .text1 , .text2 , .text3
 {
     margin-top: 3%;
@@ -240,7 +274,7 @@ input
 }
 .text3
 {
-   font-size: 11px;
+   font-size: 12px;
 }
 #conteneureth3 .firsth3
 {
@@ -251,69 +285,80 @@ input
    margin-left: 40px;
 }
 .populaireeth3
-{
+{   
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     width: 35%;
-    background-color: #F2F2F2; 
+    background-color: #F2F2F2;
     border-radius: 20px;
     margin-top: 1%;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-bottom: 25px;
 }
-#populaire
+.titlepops
 {
-   display: flex;
-   flex-direction: column;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.titlepops h3
+{  
+    font-weight: bold; 
+    margin-left: 10px;
+}
+.titlepops i
+{
+    margin-right: 15px;
+    font-size: 20px;
 }
 .element2
 {
    display: flex;
    flex-direction: row;
+   justify-content: space-between;
    background-color: white;
-   border-radius: 20px;
-   word-wrap: break-word;
-   
+   border-radius: 20px;  
 }
-.element2 img
+.element2 a
 {
-    width: 55%;
+    width: 40%;  
+}
+.element2 a img
+{
+    width: 98%; 
     height: 96%;
     margin-left: 2%;
     margin-top: 2%;
     margin-bottom: 2%;
-    border-radius: 20px 0px 0px 20px;
-    object-fit: contain;
+    border-radius: 20px 0px 0px 20px; 
+    object-fit: cover;
 }
-.populaireeth3 h3
+.texto
 {
-    margin-left: 40px;
+    width: 60%;
+    padding-left: 30px;
+    padding-top: 14px;
     word-wrap: break-word;
-}
-.element2 figcaption
-{
-    width: 45%;
-    margin-top: 3%;
-    margin-right: 15%;
-    margin-left: -30%;
-}
-.texte1 , .texte2 , .texte3
-{
-    margin-top: 5%;
-    margin-left: 5%;
-    margin-bottom:5%;  
+
 }
 .texte1
 {
     font-weight: bold;
     font-size: 18px;
+    padding-right: 40px;
 }
 .texte2
 {
+    padding-top: 15px;
     font-size: 14px;
 }
 .texte3
 {  
-    font-size: 11;
-    margin-top: 25%;
+    font-size: 13px;
+    padding-top: 12%;
 }
 .acitivitéeth3
 {
@@ -323,55 +368,76 @@ input
 }
 .acitivitéeth3 h3
 {
-    margin-left: 10px;
+    margin-top: 15px;
 }
 .activité
 {
     display: flex;
-    flex-direction: row;  
+    flex-direction: row; 
+    justify-content: space-between; 
 }
-.bloc1 , .bloc3
+.bloc1
 {
-    width: 25%;
-    flex-grow: 2;
+    
+    width: 20%;    
+    border-radius:20px 20px 20px 20px;
+    box-shadow: 2px 2px 5px rgb(210, 210, 210);
+
 }
-.bloc2 , .bloc4
-{
+.bloc2
+{ 
     display: flex;
     flex-direction: column;
-    width: 25%;
-    flex-grow: 1;
+    justify-content: space-between;
+    width: 20%;    
 }
-.activité figure
+.bloc2 .bloce
 {
     border-radius:20px 20px 20px 20px;
-    box-shadow: 1px 1px 5px rgb(210, 210, 210);
+    box-shadow: 2px 2px 5px rgb(210, 210, 210); 
 }
-.activité img
+.bloc1 img
+{   width: 100%;
+    height: 500px;
+    border-radius:20px 20px 0 0;
+    object-fit: cover;
+}
+.bloc2 img
 {
     width: 100%;
-    border-radius:20px 20px 0px 0px; 
-    object-fit: contain;
+    border-radius:20px 20px 0 0;
+    object-fit: cover;
 }
-.activité figcaption
-{
-    width: 100%;
+.bloc1 .actw
+{  
     font-family: Raleway2, serif;
-    padding: 5%;
+    margin-left: 25px; 
+    margin-top: 18px;
+    margin-bottom: 18px;
     word-wrap: break-word;
+}
+.bloc2 .actw
+{
+    font-family: Raleway2, serif;
+    margin-left: 20px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    word-wrap: break-word; 
 }
 .monfooter
 {
     display: flex;
     flex-direction:row;
-    justify-content: space-around;
+    justify-content: flex-start;
     margin-top: 5%;
     background-color: #F2F2F2;
 }
 .foot
 {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     width: 30%;
+    margin-left: 50px;
     font-family: Raleway1, serif;
     word-wrap: wrap;
 }
@@ -388,5 +454,281 @@ input
 }
 .monfooter li
 {
+    word-wrap: break-word;
     padding-bottom: 10px;
+}
+.monfooter h3
+{
+    word-wrap: break-word;
+}
+
+/* Mode tablette */
+
+@media screen and (max-width: 992px)
+{    
+    body
+    {
+        padding: 0;
+        margin: 0;
+    }
+    nav 
+    {
+      width: 100%;
+    }
+    nav ul
+    {
+    flex-wrap: nowrap;
+    } 
+    .heberg
+    {
+        flex-direction: column-reverse;
+    } 
+    .populaireeth3
+    {
+        width: 93%;
+    }
+    .populaireeth3 .element2
+    {
+        margin-bottom: 10px;
+    }
+    #conteneureth3
+    {
+        width: 100%;
+    }
+    .bloc1 .bloce
+    {
+        height: 100%;
+    }
+    .bloc2 .bloce
+    {
+        height: 48%;
+    }
+    
+    .bloc1 img
+    {
+        height: 300px;
+    }
+    .bloc2 img 
+    {
+        height: 110px;
+    }
+    .activité .actw
+    {
+        margin-right: 8px;
+    }
+  
+}
+
+/*  style mobile */
+
+@media screen and (max-width: 768px)
+{
+
+    .titre, .banière_recherche
+    {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+    #logo
+    {
+        position: absolute;
+        margin-bottom: 85px;
+        margin-left: 5%;
+    }    
+    nav
+    {
+       width: 100%;
+       margin-bottom: 60px;
+    }
+    nav li :hover
+    {
+        border: none;
+        padding-top: 0;
+    }
+    .starbi
+    {
+        display: inline-block;
+        border: none; 
+        position: relative;
+        color: #0065FC;
+        top: -10px;
+        width: 100%;
+        text-align: -moz-center;
+        margin-left: -13%;
+    }
+    .starby
+    {
+        display: inline-block;
+        position: relative;
+        top: -10px;
+        width: 100%;
+        text-align: -moz-center;
+        margin-left: -13%;
+    }
+    .oneli
+    { 
+        position: absolute;
+        width: 50%;
+        top: 90px;
+        left: 0%;
+        border-bottom: 2px solid #0065FC;
+    }
+    .twoli
+    {
+       position: absolute;
+       width: 50%;
+       top: 90px;
+       left: 50%;
+       border-bottom: 2px solid #F2F2F2;
+    }
+    .treeli
+    {
+       position: absolute;
+       top: 25px;
+       right: 15px;
+    }
+    .recherche
+    {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    input::placeholder
+    { 
+        opacity: 1;
+        color: black;
+    }
+    #champ-text
+    {
+        width: calc(100% - 50px);
+    }
+    .button_search1
+    {
+        display: none;
+    }
+    .button_search2
+    {
+        display: inline-block;
+        color: white;
+        font-size: 20px;
+        line-height: 52px;
+    }
+    #button-s
+    {
+        width: 50px;
+        border-radius: 15px 15px 15px 15px;
+        margin-left: -4%;
+    }
+    .heberg
+    {
+        flex-direction: column-reverse;
+    }
+    .populaireeth3
+    {
+        width: 100%;
+        border-radius: 0;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 15px;
+    }
+    #conteneureth3
+    {
+        width: 100%;
+        background-color: white;
+    }
+    .conteneur
+    {   
+        padding: 0;
+        width: 100%;
+        flex-direction: column;
+    }
+    .element1
+    {
+        width: 90%;
+        margin-right: 5%;
+        margin-left: 5%;  
+    }
+    .element1 img
+    {
+        width: 98%;
+        height: 130px;
+        margin-left: 1%;
+        margin-right: 1%;
+        margin-top: 1%;
+    }
+    .titlepops
+    {
+        width: 90%;
+    }
+    .populaireeth3 .element2
+    {
+       margin-bottom: 15px;
+    }
+    .element2
+    {
+        width: 90%;  
+    }
+    .filtre .bund
+    {
+    margin-bottom: 10px;
+    }
+    .texto
+    {
+       padding-top: 2%; 
+       padding-bottom: 2%;       
+    }
+    header, #bloc-page
+    {
+        padding: 0;
+    }
+    .activité
+    {
+        flex-direction: column;
+    }
+    .bloc1 
+    {
+        width: 90%;
+        margin-right: 5%;
+        margin-left: 5%;
+        margin-bottom: 30px;
+    }
+    .bloc2 
+    {
+        width: 90%;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+    .bloce
+    {
+        margin-bottom: 30px; 
+    }
+    .bloc1 img
+    {
+        width: 100%;
+        height: 150px;
+    }
+    .bloc2 img
+    {
+        width: 100%;
+        height: 150px;
+    }
+    .acitivitéeth3 h3
+    {
+        margin-left: 5%;
+        margin-bottom: 10%;
+        font-size: 20px;
+        font-weight: revert;
+    }
+    .monfooter
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        
+    }
+    .foot
+    {
+        width: 95%;
+        margin-left: 5%;
+    }
 }
