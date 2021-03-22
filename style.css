@@ -545,43 +545,39 @@ input
     nav
     {
         width: 100%;
-        margin-bottom: 60px;
+        margin-top: 60px;
     }
-    nav li :hover
+    nav ul 
     {
-        border: none;
-        padding-top: 0;
+        margin-left: 0;
+        padding-left: 0;
+    }
+    nav li
+    {
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    nav li:hover
+    {
+        color: #0065FC;
+        border-bottom: 4px solid #0065FC;
     }
     .starbi
     {
-        display: inline-block;
-        border: none; 
-        position: relative;
-        color: #0065FC;
-        top: -10px;
-        margin-left: 35%;
+        display: inline-block; 
     }
     .starby
     {
         display: inline-block;
-        position: relative;
-        top: -10px;
-        margin-left: 35%;
     }
     .oneli
     { 
-        position: absolute;
         width: 50%;
-        top: 90px;
-        left: 0%;
         border-bottom: 2px solid #0065FC;
     }
     .twoli
     {
-        position: absolute;
         width: 50%;
-        top: 90px;
-        left: 50%;
         border-bottom: 2px solid #F2F2F2;
     }
     .treeli
@@ -589,6 +585,10 @@ input
         position: absolute;
         top: 25px;
         right: 15px;
+    }
+    .filtre h3
+    {
+        width: 100%;
     }
     .recherche
     {
